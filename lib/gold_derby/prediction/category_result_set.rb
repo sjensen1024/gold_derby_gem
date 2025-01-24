@@ -1,3 +1,5 @@
+require "ostruct"
+
 module GoldDerby
 	module Prediction
 		class CategoryResultSet
@@ -40,7 +42,7 @@ module GoldDerby
 
 			def parse_list_item_rank(list_item)
 				extract_text_from_element(
-					select_list_item_and_css_text(list_item, 'div.predictions-position').first
+					select_list_item_and_css_text(list_item, 'div.predictions-position-v2').first
 				)
 			end
 

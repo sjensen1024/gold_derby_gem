@@ -1,6 +1,7 @@
 require "httparty"
 require "nokogiri"
 require "active_support/all"
+require "ostruct"
 
 module GoldDerby
 	module Prediction

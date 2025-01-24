@@ -21,7 +21,7 @@ RSpec.describe GoldDerby::Prediction::CategoryResultSet do
 				OpenStruct.new(rank: "1", nominee: "Oppenheimer", related_production: nil)
 			)
 			expect(category_result_set.results).to include(
-				OpenStruct.new(rank: "74", nominee: "Memory", related_production: nil)
+				OpenStruct.new(rank: "78", nominee: "Passages", related_production: nil)
 			)
 		end
 	end
@@ -39,7 +39,7 @@ RSpec.describe GoldDerby::Prediction::CategoryResultSet do
 				OpenStruct.new(rank: "1", nominee: "Christopher Nolan", related_production: "Oppenheimer")
 			)
 			expect(category_result_set.results).to include(
-				OpenStruct.new(rank: "69", nominee: "Michel Franco", related_production: "Memory")
+				OpenStruct.new(rank: "70", nominee: "Ira Sachs", related_production: "Passages")
 			)
 		end
 	end

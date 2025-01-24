@@ -30,7 +30,7 @@ RSpec.describe GoldDerby::Award::Oscar do
 		it 'should apply predictions with the correct end URL' do
 			expect(
 				GoldDerby::Prediction::CombinedOdd
-			).to receive(:new).with("oscars-nominations-#{Time.current.year}-predictions")
+			).to receive(:new).with("oscars-nominations-#{year_argument}-predictions")
 
 			oscar
 		end
